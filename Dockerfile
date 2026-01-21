@@ -1,9 +1,5 @@
-# Dockerfile para serviço de conversão de mídia com FFmpeg
-# Baseado em Ubuntu LTS com FFmpeg e Node.js
-
 FROM ubuntu:22.04
 
-LABEL maintainer="Paul Visco <paul.visco@gmail.com>"
 LABEL description="Docker image for media conversion using FFmpeg and Node.js"
 
 #####################################################################
