@@ -13,6 +13,10 @@ app.use(compression());
 winston.remove(winston.transports.Console);
 winston.add(winston.transports.Console, {'timestamp': true});
 
+app.get('/health', function(req, res) {
+    res.status(200).send('online');
+});
+
 for (let prop in endpoints.types) {
     if (endpoints.types.hasOwnProperty(prop)) {
         let ffmpegParams = endpoints.types[prop];
